@@ -1,0 +1,217 @@
+*
+{
+    /* border: 1px solid #000; */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+a
+{
+    text-decoration: none;
+    letter-spacing: 3px;
+    color: #fff;
+}
+.big-container
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(40deg, blue, deeppink);
+}
+.sm-container
+{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(40deg, rgb(7, 7, 59), deeppink);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0.4rem 0.5rem 0.7rem 0.4rem rgba(68, 68, 68, 0.555);
+}
+.left-div, .right-div
+{
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+/* LEFT DIV STYLE */
+.left-div
+{
+    padding-left: 50px;
+    color: #fff;
+}
+.img-div
+{
+    width: 220px;
+    height: 70px;
+}
+.img-div img
+{
+    width: 220px;
+    height: 70px;
+}
+.welcome-span
+{
+    margin: 4.5rem 4rem;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.welcome-span h1
+{
+    font-weight: 500;
+}
+.welcome-span p
+{
+    margin-left: 4rem;
+    font-weight: 400;
+}
+.rounded-1, .rounded-2, .rounded-3
+{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    top: 54%;
+    left: 17%;
+    background: linear-gradient(90deg, blue, deeppink);
+}
+.rounded-2
+{
+    width: 65px;
+    height: 65px;
+    top: 32%;
+    left: 38%;
+}
+.rounded-3
+{
+    width: 30px;
+    height: 30px;
+    top: 80%;
+    left: 45%;
+}
+/* LEFT DIV STYLE */
+/* RIGHT DIV STYLE */
+.right-div
+{
+    background: #fff;
+    color: #222;
+    align-items: center;
+}
+.right-div .img-div-2
+{
+    display: none;
+}
+.right-div h1
+{
+    margin-right: 230px;
+}
+#login-form
+{
+    width: 85%;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.form-span, #login, #checkbox-span
+{
+    width: 80%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    border-radius: 50px;
+}
+.form-span i
+{
+    font-size: 1.2rem;
+    margin-right: 15px;
+}
+#email
+{
+    width: 60%;
+    height: 30px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+#checkbox-span
+{
+    border: none;
+}
+#checkbox
+{
+    margin-right: 5px;
+    cursor: pointer;
+}
+#checkbox-span a
+{
+    color: rgb(7, 7, 59);
+    margin-left: 3rem;
+    font-weight: 600;
+}
+#login:hover
+{
+    background: #fff;
+    color: rgb(7, 7, 59);
+    border: 2px solid rgb(7, 7, 59);
+}
+#login
+{
+    background: rgb(7, 7, 59);
+    font-size: 1.5rem;
+    border: none;
+}
+#sign-up
+{
+    color: rgb(7, 7, 59);
+    font-weight: 400;
+}
+#sign-up a
+{
+    margin: 0 1.5rem;
+    color: rgb(7, 7, 59);
+    text-decoration: underline;
+    font-weight: 600;
+}
+/* RIGHT DIV STYLE */
+
+/* RESPONSIVE */
+@media (max-width:975px) {
+    .sm-container{
+        width: 100%;
+        height: 100vh;
+        border-radius: 0;
+    }
+    .left-div{
+        display: none;
+    }
+    .right-div{
+        width: 100%;
+        height: 100vh;
+    }
+    .right-div h1{
+        display: none;
+    }
+    .right-div .img-div-2{
+        display: flex;
+        width: 220px;
+        height: 70px;
+    }
+    #login-form{
+        border: 1px solid rgb(7, 7, 59);
+        border-radius: 20px;
+    }
+}
